@@ -1,0 +1,19 @@
+{
+    "name": "nkf/example-api-client",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ExampleApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vasiliy Nikiforov",
+            "email": "kaktusv6@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "psr/http-message": "^2.0"
+    }
+}
