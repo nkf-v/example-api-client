@@ -4,21 +4,15 @@ namespace ExampleApi;
 
 class Config
 {
-    protected $url;
+    protected string $url;
 
-    /**
-     * @param $url
-     */
     public function __construct($url)
     {
         // TODO add assert
-        $this->url = trim($url, '/');
+        $this->url = trim($url, ' /');
     }
 
-    /**
-     * @return mixed
-     */
-    public function getUrl()
+    public function getUrl(): string
     {
         return $this->url;
     }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<phpunit
+    testdox="true"
+>
+    <testsuites>
+        <testsuite name="Entities Tests">
+            <directory suffix="Tests.php">tests/Entities</directory>
+        </testsuite>
+
+        <testsuite name="Clients Tests">
+            <directory suffix="Tests.php">tests/Clients</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -12,14 +12,13 @@ class ClientException extends \Exception implements ClientExceptionInterface
         protected readonly RequestInterface $request,
         protected readonly ?ResponseInterface $response,
         int $code = 0,
-        ?\Throwable $previous = null)
-    {
+        ?\Throwable $previous = null,
+    ) {
         parent::__construct($this->createMessage($request), $code, $previous);
     }
 
-
     protected function createMessage(RequestInterface $request): string
     {
-        return $request->getMethod() . ' ' . $request->getUri();
+        return $request->getMethod().' '.$request->getUri();
     }
 }
