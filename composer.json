@@ -1,5 +1,6 @@
 {
     "name": "nkf/example-api-client",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
