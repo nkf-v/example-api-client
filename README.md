@@ -18,7 +18,7 @@ use GuzzleHttp\Psr7\HttpFactory;
 use ExampleApi\Config;
 use ExampleApi\Clients\CommentClient;
 
-$config = new Config('http://example.com/); // Можно изменить если используется проксирующий домен
+$config = new Config('http://example.com/'); // Можно изменить если используется проксирующий домен
 
 $client = new CommentClient(
   new Client(),
